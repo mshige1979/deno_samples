@@ -1,0 +1,50 @@
+<!DOCType html>
+<html>
+<head>
+    <title>sample</title>
+<style>
+* {
+    padding: 0;
+    margin: 0;
+}
+.container {
+    width: 600px;
+    margin: 0 auto;
+}
+.form {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form a {
+    margin-top: 50px;
+    width: 140px;
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: center;
+    background-color: #d33422;
+    color: #FFF;
+    text-decoration: none;
+}
+.form a:active {
+    position: relative;
+    top: 1px;
+}
+</style>
+</head>
+<boyd>
+    <div class="container">
+        <div class="form">
+            <div>
+                <p>押下するとsamlログインを行う予定</p>
+            </div>
+            <div>
+                <a href="https://mshige1979-saml-test.auth.ap-northeast-1.amazoncognito.com/oauth2/authorize?response_type=token&identity_provider=Okta&client_id=3lg3e53oufomq9jqaltnueav0t&redirect_uri=http://localhost:8080/callback/&scope=email+openid">Saml Login</a>
+            </div>
+        </div>
+    </div>
+</boyd>
+</html>
